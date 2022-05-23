@@ -20,6 +20,7 @@ def clear_input():
     pass
 
 def handle_first(check, state):
+    #Check repetitive
     if state == "first":
         first = check
         state = "symbol"
@@ -110,7 +111,7 @@ while run:
     print("After check") # TEST PRINT
 
     if state == "first":
-        handle_first(check, state)
+        handle_first(check, state) #State input is repetitive
         print("After handle_first") # TEST PRINT
 
     if state == "symbol":
